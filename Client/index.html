@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy Game - Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho com navegação -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Fantasy Game</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#inscrever">Inscreva-se</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção principal com imagem de fundo -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Participe do maior Fantasy de Luta</h2>
+      <p>Escolha seus lutadores, crie estratégias e dispute com outros fãs para ver quem é o verdadeiro campeão.</p>
+      <a href="#inscrever" class="cta-button">Inscreva-se agora</a>
+    </div>
+  </section>
+
+  <!-- Seções adicionais podem ser adicionadas aqui -->
+   
+  <div class="register-form">
+    <h2>Cadastro</h2>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Nome" required>
+      <input type="date" id="birthDate" placeholder="Data de Nascimento" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Senha" required>
+      <input type="password" id="confirmPassword" placeholder="Confirme a Senha" required>
+      <button type="submit">Registrar</button>
+      <p id="registerMessage"></p>
+    </form>
+  </div>
+  
+  <div class="login-form">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+      <p id="loginMessage"></p>
+    </form>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
